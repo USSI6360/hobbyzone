@@ -37,7 +37,12 @@
 
    <% if user_signed_in? %>
         <div id="navbarExampleTransparentExample" class="navbar-menu">
-
+          <div class="navbar-item">
+            <%= link_to "一覧", hobbies_path, class: "navbar-item button is-warning is-light" %>
+          </div>
+          <div class="navbar-item">
+            <%= link_to "新規投稿", new_hobby_path, class: "navbar-item button is-warning is-light" %>
+          </div>
          <div class="navbar-end">
             <div class="navbar-item">
               <div class="field is-grouped">
@@ -56,6 +61,9 @@
        </div>
     <% else %>
       <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-item">
+            <%= link_to "一覧", hobbies_path, class: "navbar-item button is-warning is-light" %>
+          </div>
           <div class="navbar-item">
             <%= link_to "投稿者一覧", users_path, class: "navbar-item button is-warning is-light" %>
           </div>
