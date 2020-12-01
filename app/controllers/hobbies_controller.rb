@@ -16,7 +16,7 @@ class HobbiesController < ApplicationController
     @hobby = Hobby.new(hobby_params)
     @hobby.user_id = current_user.id
     if @hobby.save
-      redirect_to hobby_path(@hobby), notice: "レシピを投稿しました。"
+      redirect_to hobby_path(@hobby), notice: "投稿しました。"
     else
       render :new
     end
@@ -33,7 +33,7 @@ class HobbiesController < ApplicationController
   def update
     @hobby = Hobby.find(params[:id])
     if @hobby.update(hobby_params)
-      redirect_to hobby_path(@hobby), notice: "レシピを更新しました。"
+      redirect_to hobby_path(@hobby), notice: "更新しました。"
     else
       render :edit
     end

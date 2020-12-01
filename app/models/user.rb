@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          has_many :hobbies, dependent: :destroy
          attachment :profile_image
+
+         validates :username, presence: true
 end
