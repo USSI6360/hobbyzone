@@ -1,4 +1,5 @@
 class HobbiesController < ApplicationController
+  before_action :authenticate_user!,except: [:index]
   def index
     @hobbies = Hobby.all
   end
