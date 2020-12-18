@@ -25,7 +25,7 @@ URL：
 ![](https://i.gyazo.com/04dccc81260fd701a51d537df84fd461.jpg)
 
 ### 機能一覧
-https://gyazo.com/ff41fd39cad84371204e19784981b0a3
+https://gyazo.com/42a8c9c81ee853168566f69b5c3922cf
 
 ### ユーザー一覧
 https://gyazo.com/63334d1c0673d9c96a415ea6a87db1a3
